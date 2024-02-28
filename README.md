@@ -10,10 +10,3 @@ TGO en Analisis y Desarrollo de Software
 | 02-HTML | Leguaje de Etiquetas |
 | 03-CSS | Hoja de Casacada |
 | 04-JavaScript | Lenguaje de Programacion |
-|
-=======
-| 01-Emmet | Flujo de trabajo |
-| 02-HTML | Leguaje de Etiquetas |
-| 03-CSS | Hoja de Casacada |
-| 04-JavaScript | Lenguaje de Programacion |
->>>>>>> 22f0235c082338b77da1ff54d8a8e822d2afdcb6

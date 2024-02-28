@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 body{
-<<<<<<< HEAD
-    background-color: #2ac515;
-=======
-    background-color: #ff9d00;
->>>>>>> 22f0235c082338b77da1ff54d8a8e822d2afdcb6
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='0' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;
+    background-color: #36FF3A;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%239BFF97' stroke-width='100' stroke-opacity='0' %3E%3Ccircle fill='%2336FF3A' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%2331f138' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%232de237' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%2329d435' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%2326c633' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%2322b830' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%231fab2e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%231d9d2b' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%231b9029' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23188326' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23177623' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23156a20' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23135d1d' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%2312511a' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23104516' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%230e3a13' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%230c2f10' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%230B240A' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-<<<<<<< HEAD
+
 nav.controls{
     position: fixed;
     a:is(:link, :visited) {
@@ -32,8 +28,7 @@ nav.controls{
         transform: scale(1);
     }
 }
-=======
->>>>>>> 22f0235c082338b77da1ff54d8a8e822d2afdcb6
+
 main{
     align-items: center;
     display: flex;
@@ -78,7 +73,7 @@ main{
             i{
                 background-color: #7a0353;
                 border-radius: 20px;
-                color: #ffa600;
+                color: #76b42e;
                 font-style: normal;
                 display: flex;
                 transition: all 0.6s ease-in;
@@ -90,13 +85,13 @@ main{
         }
         a:is(:hover)  {
             transform: translate(-25px);
-            background-color: rgba(190, 78, 4, 0.596);
+            background-color: rgba(6, 175, 0, 0.596);
         }
 
         a:is(:hover) i {
             transform: scale(1.4) rotateX(360deg);
         }
-<<<<<<< HEAD
+
     }    
     section {
         border-radius: 10px;
@@ -121,8 +116,5 @@ main{
             color: #fff9;
             padding: 0 10px 10px 10px;
         }
-        
-=======
->>>>>>> 22f0235c082338b77da1ff54d8a8e822d2afdcb6
     }
 }
