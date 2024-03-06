@@ -5,7 +5,6 @@ TGO en Analisis y Desarrollo de Software
 
 | temas | descripcion |
 | ----- | ----------- |
-<<<<<<< HEAD
 | 01-Emmet| Flujo de Trabajo |
 | 02-HTML | Leguaje de Etiquetas |
 | 03-CSS | Hoja de Casacada |
