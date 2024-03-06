@@ -71,9 +71,9 @@ main{
             width: 280px;
 
             i{
-                background-color: #7a0353;
+                background-color: #9d1670;
                 border-radius: 20px;
-                color: #ffa600;
+                color: #3424ab;
                 font-style: normal;
                 display: flex;
                 transition: all 0.6s ease-in;
@@ -85,7 +85,7 @@ main{
         }
         a:is(:hover)  {
             transform: translate(-30px);
-            background-color: rgba(190, 78, 4, 0.596);
+            background-color: rgb(245, 102, 6);
         }
 
         a:is(:hover) i {
