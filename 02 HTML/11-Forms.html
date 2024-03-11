@@ -20,6 +20,48 @@
                 }
             }
         }
+        section{
+            nav{
+                width: fit-content;
+                margin: 10px auto;
+                a:is(:link, :visited){
+                    background-color: #0004;
+                    color: #fff;
+                    padding: 8px;
+                    text-decoration: none;
+                    transition: all 0.2s ease-in;
+                }
+                a:is(:active){
+                    background-color: #0009;
+                }
+                a:First-child{
+                    border-radius: 20px 0 0 20px;
+                }
+                a:last-child{
+                    border-radius: 0 20px 20px 0;
+                }
+            }
+
+            div#elements,
+            div#example {
+                display: none;
+            }
+
+            #elements:target,
+            #example:target {
+                display: block;
+            }
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            label {
+                display: flex;
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
@@ -36,24 +78,156 @@
             </h2>
         </header>
         <section>
-            <h3>inputs</h3>
-            <div class="block">
-                <div class="input">
-                    <h4>Text</h4>
-                    <input type="text">
-                </div>
+            <nav>
+                <a href="#elements">Elements</a>
+                <a href="#example">Example</a>
+            </nav>
+            <div id="elements">
+                <h3>inputs</h3>
                 <div class="block">
                     <div class="input">
-                    <h4>Password</h4>
-                    <input type="password">
-                </div>
-                 <div class="block">
+                        <h4>Text</h4>
+                        <input type="text">
+                    </div>
+                    <div class="block">
+                        <div class="input">
+                        <h4>Password</h4>
+                        <input id="passw" type="password">
+                        <button id="toggle-option">✅</button>
+                    </div>
+                    <div class="block">
+                        <div class="input">
+                        <h4>Number</h4>
+                        <input type="number">
+                    </div>
+                        <div class="input">
+                        <h4>Range</h4>
+                        <input type="range" value="0" min="0" max="100" step="25" oninput="per.value=this.value+'%'">
+                        <output id="per">0%</output>
+                        </div>
                     <div class="input">
-                    <h4>Number</h4>
-                    <input type="number">
-                 </div>
+                        <h4>color</h4>
+                        <input type="color" oninput="color.value=this.value">
+                        <output id="color"></output>
+                    </div>
+                    <div class="input">
+                        <h4>Date</h4>
+                        <input type="date">
+                    </div>
+                    <div class="input">
+                        <h4>time</h4>
+                        <input type="Time">
+                    </div>
+                    <div class="input">
+                        <h4>Week</h4>
+                        <input type="week">
+                    </div>
+                    <div class="input">
+                        <h4>Month</h4>
+                        <input type="month">
+                    </div>
+                    <div class="input">
+                        <h4>Email:</h4>
+                        <input type="Email">
+                    </div>
+                    <div class="input">
+                        <h4>Search</h4>
+                        <input type="search">
+                    </div>
+                    <div class="input">
+                        <h4>File</h4>
+                        <input type="file">
+                    </div>
+                    <div class="input">
+                        <h4>Button</h4>
+                        <input type="button" value="press">
+                    </div>
+                    <div class="input">
+                        <h4>Submit</h4>
+                        <input type="submit">
+                    </div>
+                    <div class="input">
+                        <h4>Reset:</h4>
+                        <input type="reset" value="reset">
+                    </div>
+                    <div class="input">
+                        <h4>Radio</h4>
+                        <input type="radio" name="option" checked>
+                        <input type="radio" name="option">
+                    </div>
+                    <div class="input">
+                        <h4>CheckBox</h4>
+                        <input type="checkbox" name="option" checked>
+                        <input type="checkbox" name="option">
+                    </div>
+                    <h3>Others Elements</h3>
+                    </div>
+                    <div class="input">
+                        <h4>Progress</h4>
+                        <progress value="0.5"></progress>
+                    </div>
+                    <div clas="input"></div>
+                    <h4>Select</h4>
+                    <select name="gender">
+                        <option value="" selected>Select Gender...</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    </div>
+                    <div class="input">
+                        <h4>Text Area</h4>
+                        <textarea cols="20" rows="4"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div id="example">
+                <h3>Example Form</h3>
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>
+                            <h4>Personal Info:</h4>
+                        </legend>
+                        <form action="" method="post">
+                            <label for="">
+                                Fullname
+                                <input type="text" name="Fullname" required>
+                            </label>
+                            <label for="">
+                                Email
+                                <input type="Email" name="Email" required>
+                            </label>
+                            <label for="">
+                                BirthDay
+                                <input type="date" name="birthday" required>
+                            </label>
+                            <label for="">
+                                Gender:
+                                <select name="gander" required>
+                                    <option value="Female">Female</option>
+                                    <option value="Male">Male</option>
+                                </select>
+                            </label>
+                            <input type="submit" value="Send Data">
+                            <input type="reset" value="Reset Data">
+                        </form>
+                    </fieldset>
+                </form>
             </div>
         </section>
     </main>
+    <script>
+        const passw = document.getElementById('passw')
+        const toggleOpt = document.getElementById('toggle-option')
+
+        toggleOpt.addEventListener('click', () => {
+            if(toggleOpt.textContent == "✅") {
+                toggleOpt.textContent = '❎'
+                passw.setAttribute('type', 'text')
+            } else {
+                toggleOpt.textContent = '✅'
+                passw.setAttribute('type', 'password')
+            }
+        })
+    </script>
 </body>
 </html>
