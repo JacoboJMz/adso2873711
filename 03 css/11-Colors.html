@@ -15,12 +15,74 @@
             display: flex;
         }
         div.colors div.row div{
-            font-size: 0.6rem;
+            font-size: 0.4rem;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 80px;
             width: 80px;
+        }
+        div.colors div.row div.maroon { 
+            background-color: maroon; 
+        }
+        div.colors div.row div.red { 
+            background-color: red; 
+            color: white;
+        }
+        div.colors div.row div.orange { 
+            background-color: orange;
+            color: black; 
+        }
+        div.colors div.row div.yellow { 
+            background-color: yellow; 
+            color: black;
+        }
+        div.colors div.row div.olive { 
+            background-color: olive; 
+        }
+        div.colors div.row div.purple { 
+            background-color: purple; 
+        }
+        div.colors div.row div.fuchsia { 
+            background-color: fuchsia; 
+            color: white;
+        }
+        div.colors div.row div.white { 
+            background-color: white; 
+        }
+        div.colors div.row div.lime { 
+            background-color: lime; 
+            color: black;
+        }
+        div.colors div.row div.green { 
+            background-color: green; 
+        }
+        div.colors div.row div.navy { 
+            background-color: navy; 
+        }
+        div.colors div.row div.blue { 
+            background-color: blue; 
+            color: white;
+        }
+        div.colors div.row div.aqua { 
+            background-color: aqua; 
+        }
+        div.colors div.row div.teal { 
+            background-color: teal; 
+        }
+        div.colors div.row div.black { 
+            background-color: black; 
+        }
+        div.colors div.row div.silver { 
+            background-color: silver; 
+            color: white;
+        }
+        div.colors div.row div.gray { 
+            background-color: gray; 
+        }
+        div.colors div.row div:first-child,
+        div.colors div.row div:last-child { 
+            color: white; 
         }
     </style>
 </head>
@@ -38,29 +100,116 @@
         <section class="section">
             <h3>Color Names:<</h3>
             <div class="colors">
-                <div class="row1">
-                    <div class="color">maroon</div>
-                    <div class="color">red</div>
-                    <div class="color">orange</div>
-                    <div class="color">yellow</div>
-                    <div class="color">olive</div>
+                <div class="row row1">
+                    <div class="maroon">maroon</div>
+                    <div class="red">red</div>
+                    <div class="orange">orange</div>
+                    <div class="yellow">yellow</div>
+                    <div class="olive">olive</div>
                 </div>
-                <div class="row2">
-                    <div class="color">purple</div>
-                    <div class="color">fuchisia</div>
-                    <div class="color">white</div>
-                    <div class="color">lime</div>
-                    <div class="color">green</div>
+                <div class="row row2">
+                    <div class="purple">purple</div>
+                    <div class="fuchsia">fuchisia</div>
+                    <div class="white">white</div>
+                    <div class="lime">lime</div>
+                    <div class="green">green</div>
                 </div>
-                <div class="row3">
-                    <div class="color">navy</div>
-                    <div class="color">blue</div>
-                    <div class="color">aqua</div>
-                    <div class="color">teal</div>
+                <div class="row row3">
+                    <div class="navy">navy</div>
+                    <div class="blue">blue</div>
+                    <div class="aqua">aqua</div>
+                    <div class="teal">teal</div>
                 </div>
-                <div class="color">black</div>
-                <div class="color">silver</div>
-                <div class="color">gray</div>
+                    <div class="row row4">
+                    <div class="black">black</div>
+                    <div class="silver">silver</div>
+                    <div class="gray">gray</div>
+                </div>
+            </div>
+
+            <h3>Color RGB:<</h3>
+            <div class="colors">
+                <div class="row row1">
+                    <div class="maroon">Rgb(128, 0, 0)</div>
+                    <div class="red">Rgb(255, 0, 0)</div>
+                    <div class="orange">Rgb(255, 165, 0)</div>
+                    <div class="yellow">Rgb(255, 255, 0)</div>
+                    <div class="olive">Rgb(128, 128, 0)</div>
+                </div>
+                <div class="row row2">
+                    <div class="purple">Rgb(128, 0, 128)</div>
+                    <div class="fuchsia">Rgb(255, 0, 255)</div>
+                    <div class="white">Rgb(255, 255, 255)</div>
+                    <div class="lime">Rgb(0, 255, 0)</div>
+                    <div class="green">Rgb(0, 128, 0)</div>
+                </div>
+                <div class="row row3">
+                    <div class="navy">Rgb(0, 0, 128)</div>
+                    <div class="blue">Rgb(0, 0, 255)</div>
+                    <div class="aqua">Rgb(0, 255, 255)</div>
+                    <div class="teal">Rgb(0, 128, 128)</div>
+                </div>
+                    <div class="row row4">
+                    <div class="black">Rgb(0, 0, 0)</div>
+                    <div class="silver">Rgb(192, 192, 192)</div>
+                    <div class="gray">Rgb(128, 128, 128)</div>
+                </div>
+            </div>
+            <h3>Color Hexadecimal:<</h3>
+            <div class="colors">
+                <div class="row row1">
+                    <div class="maroon">#800000</div>
+                    <div class="red">#ff0000</div>
+                    <div class="orange">#ffa500</div>
+                    <div class="yellow">#f0f000</div>
+                    <div class="olive">olive</div>
+                </div>
+                <div class="row row2">
+                    <div class="purple">#800080</div>
+                    <div class="fuchsia">#ff00ff</div>
+                    <div class="white">#ffffff</div>
+                    <div class="lime">#00ff00</div>
+                    <div class="green">#008000</div>
+                </div>
+                <div class="row row3">
+                    <div class="navy">#000080</div>
+                    <div class="blue">#0000ff</div>
+                    <div class="aqua">#00f0ff</div>
+                    <div class="teal">#008080</div>
+                </div>
+                    <div class="row row4">
+                    <div class="black">#000000</div>
+                    <div class="silver">#c8c0c0</div>
+                    <div class="gray">#808080</div>
+                </div>
+            </div>
+            <h3>Color HSL:<</h3>
+            <div class="colors">
+                <div class="row row1">
+                    <div class="maroon">HSL(0, 100%, 25%)</div>
+                    <div class="red">HSL(0, 100%, 50%)</div>
+                    <div class="orange">HSL(38.8, 100%, 50%)</div>
+                    <div class="yellow">HSL(60, 100%, 50%)</div>
+                    <div class="olive">HSL(60, 100%, 25%)</div>
+                </div>
+                <div class="row row2">
+                    <div class="purple">HSL(270, 87%, 25%)</div>
+                    <div class="fuchsia">HSL(300, 100%, 50%)</div>
+                    <div class="white">HSL(0, 0%, 100%)</div>
+                    <div class="lime">HSL(120, 100%, 50%)</div>
+                    <div class="green">HSL(120, 100%, 25%)</div>
+                </div>
+                <div class="row row3">
+                    <div class="navy">HSL(240, 100%, 25%)</div>
+                    <div class="blue">HSL(240, 100%, 50%)</div>
+                    <div class="aqua">HSL(180, 100%, 50%)</div>
+                    <div class="teal">HSL(180, 100%, 25%)</div>
+                </div>
+                    <div class="row row4">
+                    <div class="black">HSL(0, 0%, 0%)</div>
+                    <div class="silver">HSL(0, 0%, 75%)</div>
+                    <div class="gray">HSL(0, 0%, 50%)</div>
+                </div>
             </div>
         </section>
     </main>
