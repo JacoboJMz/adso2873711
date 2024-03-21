@@ -39,7 +39,7 @@ main{
 
     header{
         h1, h2 {
-            color: #fff8;
+            color: rgba(0, 0, 0, 0.714);
             text-align: center;
             margin: 0;
         }
