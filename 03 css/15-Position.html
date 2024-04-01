@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        div.parent {
+            border: 2px solid #0009;
+            margin: 20px auto;
+            padding: 32px;
+            width: 200px;
+        }
+        
+        div.child {
+            background-color: #0006;
+            color: #fff9;
+            padding: 10px;
+            text-align: center;
+            width: 50px;
+        }
+        
+        div.relative {
+            position: relative;
+        }
+        
+        div.Absolute {
+            position: absolute;
+        }
+        
+        div.child.fixed {
+            position: fixed;
+        }
+        
+        div.child.sticky {
+            position: sticky;
+        }
+        
+        div.child.relative {
+            top: -20px;
+            left: 150px;
+        }
+        
+        div.child.absolute {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+        }
+        
+        div.child.fixed {
+            top: 605px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        div.child.sticky {
+            top: 20px;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="controls">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+        </a>
+    </nav>
+    <main>
+        <header>
+            <h1>Position</h1>
+            <ul>
+                <li>Normal/Static</li>
+                <li>Relative</li>
+                <li>Absolute</li>
+                <li>Fixed</li>
+                <li>Sticky</li>
+            </ul>
+        </header>
+        <section>
+            <h3>Relative:</h3>
+            <div class="parent">
+                <div class="child relative">BOX</div>
+            </div>
+            <h3>Absolute:</h3>
+            <div class="parent relative">
+                <div class="child absolute">BOX</div>
+            </div>
+            <h3>Fixed:</h3>
+            <div class="parent">
+                <div class="child fixed">BOX</div>
+            </div>
+            <h3>Sticky:</h3>
+            <div class="parent">
+                <div class="child sticky">BOX</div>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati quasi dolorem facere, suscipit dignissimos quibusdam iure quod doloremque nihil ipsum rem, sint unde culpa in praesentium non iusto neque id maiores, dolorum laudantium reiciendis dicta
+                    quidem! Voluptatum laborum velit obcaecati pariatur, quidem officiis earum qui, iusto doloribus quaerat fugiat, eos non ab in neque nam. Odio quasi, ex velit perspiciatis reiciendis repudiandae tempora rerum laborum ipsam eum ipsa
+                    nesciunt, alias, dolorem illum ullam. Vitae magnam cupiditate eius quia, odio omnis, maxime labore illo nesciunt a consequuntur quo. Placeat amet eveniet laborum sapiente. Modi iusto laborum expedita dicta cupiditate consequatur dolorum
+                    in consectetur cum, fugiat nemo unde, libero reiciendis quia? Itaque inventore tenetur at, laboriosam aspernatur, mollitia excepturi iusto vel nihil iure deserunt. Inventore fuga, esse asperiores illo possimus est sit vel molestias
+                    voluptatem dolorem sint voluptas iste temporibus non beatae! Provident eveniet enim quos quisquam. Vitae, voluptas aspernatur? Molestias, soluta?
+                </p>
+            </div>
+        </section>
+    </main>
+
+</html>
