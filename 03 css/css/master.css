@@ -8,7 +8,7 @@ body {
 
 nav.controls {
     position: fixed;
-    a:is(link,
+    a:is(:link,
     visited) {
         border-radius: 50px;
         display: flex;
