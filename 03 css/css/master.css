@@ -8,7 +8,7 @@ body {
 
 nav.controls {
     position: fixed;
-    a:is(:link,
+    a:is(link,
     visited) {
         border-radius: 50px;
         display: flex;
@@ -59,8 +59,8 @@ main {
         flex-direction: column;
         padding: 0;
         gap: 1rem;
-        a:is(ink,
-        visited) {
+        a:is(:link,
+        : visited) {
             background-color: #0009;
             border-radius: 50px;
             display: flex;
@@ -72,9 +72,9 @@ main {
             transition: all 0.5s ease-in;
             width: 280px;
             i {
-                background-color: #340cd3;
+                background-color: #9d1670;
                 border-radius: 20px;
-                color: #08c9d6;
+                color: #3424ab;
                 font-style: normal;
                 display: flex;
                 transition: all 0.6s ease-in;
@@ -86,7 +86,7 @@ main {
         }
         a:is(:hover) {
             transform: translate(-30px);
-            background-color: rgb(7, 150, 245);
+            background-color: rgb(245, 102, 6);
         }
         a:is(:hover) i {
             transform: scale(1.4) rotateX(360deg);
