@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shuumatsu no valkyrie</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+    * {
+        transition: all 0.2s ease-in;
+    }
+    
+    body {
+        background-color: #003675;
+        color: #000;
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+    }
+    
+    main {
+        padding: 2rem;
+    }
+    
+    main header figure.Logo {
+        background: url(Images/debb4u1-9be808f3-abe5-4679-b3a2-96d191734191.png) no-repeat center;
+        margin: 0 auto;
+        width: 919px;
+        height: 354px;
+    }
+    
+    main p {
+        line-height: 2rem;
+        text-align: justify;
+    }
+    
+    main h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    main h1 span.small,
+    main h1 span.medium {
+        display: none;
+    }
+    
+    @media (max-width: 1024px) {
+        main header figure.Logo {
+            background: url(Images/image\ \(1\).png) no-repeat center;
+            width: 348px;
+            height: 370px;
+        }
+        main h1 span.small,
+        main h1 span.large {
+            display: none;
+        }
+        main h1 span.medium {
+            display: none;
+        }
+        main h1 {
+            font-size: 2.8rem;
+        }
+    }
+    
+    @media (max-width: 780px) {
+        main header figure.Logo {
+            background: url(Images/image\ \(2\).png) no-repeat center;
+            width: 162px;
+            height: 156px;
+        }
+        main h1 span.medium,
+        main h1 span.large {
+            display: none;
+        }
+        main h1 span.small {
+            display: inline;
+        }
+        main h1 {
+            font-size: 2rem;
+        }
+    }
+    
+    h1.img {
+        width: 230px;
+        height: 200px;
+        gap: 2rem;
+    }
+    
+    section {
+        display: flex;
+        gap: 2rem;
+    }
+    
+    section div {
+        background-color: #333;
+        width: 230px;
+        position: relative;
+        height: 200px;
+    }
+    
+    section div p {
+        background-color: darkgray;
+        position: absolute;
+        text-align: center;
+        color: #fffe;
+        height: 40px;
+        bottom: -15px;
+        width: 230px;
+    }
+</style>
+
+<body>
+    <main>
+
+        <header>
+            <figure class="Logo"></figure>
+        </header>
+        <section>
+            <div>
+                <img src="Images/Bruhilld t.jpeg" alt="">
+                <p>(SNV season1)</p>
+            </div>
+            <div>
+                <img src="Images/Bruhilldjpeg.jpeg" alt="">
+                <p>(SNV season1)</p>
+            </div>
+            <div>
+                <img src="Images/Bruhilld t.jpeg" alt="">
+                <p>(SNV season1)</p>
+            </div>
+            <div>
+                <img src="Images/Bruhilldjpeg.jpeg" alt="">
+                <p>(SNV season1)</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
