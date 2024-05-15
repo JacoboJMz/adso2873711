@@ -13,127 +13,285 @@
     }
     
     body {
-        background-color: #003675;
-        color: #000;
-        font-family: poppins, sans-serif;
-        font-weight: 400;
+        background: url(Images/ArenaSNV.jpg) no-repeat;
     }
     
     main {
         padding: 2rem;
     }
     
-    main header figure.Logo {
-        background: url(Images/debb4u1-9be808f3-abe5-4679-b3a2-96d191734191.png) no-repeat center;
+    main.logo {
+        background: url(Images/debb4u1-9be808f3-abe5-4679-b3a2-96d191734191.png) no-repeat;
+        height: 370px;
         margin: 0 auto;
-        width: 919px;
-        height: 354px;
+        width: 780px;
     }
     
-    main p {
-        line-height: 2rem;
-        text-align: justify;
+    main nav.guerreros {
+        display: flex;
+        gap: 70px;
+        justify-content: center;
+        margin: 20px auto;
     }
     
-    main h1 {
-        font-size: 1.5rem;
+    nav div.imagen1 {
+        border: 2px solid black;
+        background-color: #887599;
+        display: flex;
+        flex-direction: column;
+        height: 210px;
+        justify-content: flex-end;
+        position: relative;
         text-align: center;
+        width: 200px;
     }
     
-    main h1 span.small,
-    main h1 span.medium {
-        display: none;
+    nav div.imagen2 {
+        border: 2px solid black;
+        background-color: #58589b;
+        display: flex;
+        flex-direction: column;
+        height: 210px;
+        justify-content: flex-end;
+        position: relative;
+        text-align: center;
+        width: 200px;
+    }
+    
+    nav div.imagen3 {
+        border: 2px solid black;
+        background-color: #574e4e;
+        display: flex;
+        flex-direction: column;
+        height: 210px;
+        justify-content: flex-end;
+        position: relative;
+        text-align: center;
+        width: 200px;
+    }
+    
+    nav div.imagen4 {
+        border: 2px solid black;
+        background-color: #804e3e;
+        display: flex;
+        flex-direction: column;
+        height: 210px;
+        justify-content: flex-end;
+        position: relative;
+        text-align: center;
+        width: 200px;
+    }
+    
+    nav div.name {
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        background-color: #663a3a5e;
+        height: 40px;
+        color: antiquewhite;
+        font-size: 1.5rem;
+        transition: all 0.4s ease-in;
+    }
+    
+    div.name:hover {
+        background-color: #32397281;
+        height: 100px;
+    }
+    
+    nav.luchadores {
+        border-radius: 1px;
+        background: #000000c4;
+        margin: 100px auto;
+    }
+    
+    nav div.sec1 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav div.img1 {
+        background-color: #943038;
+        border: 2px solid whitesmoke;
+        height: 210px;
+        margin: 20px 20px 20px 80px;
+        width: 200px;
+    }
+    
+    nav div.img2 {
+        background-color: #927b3c;
+        border: 2px solid whitesmoke;
+        height: 210px;
+        margin: 20px 20px 20px 80px;
+        width: 200px;
+    }
+    
+    div.text {
+        display: block;
+    }
+    
+    nav p {
+        align-items: center;
+        color: aliceblue;
+        margin: 20px;
+        text-align: justify;
+        width: 600px;
+    }
+    
+    h1 {
+        color: azure;
+        margin: 20px;
+    }
+    
+    h1:hover {
+        color: red;
     }
     
     @media (max-width: 1024px) {
-        main header figure.Logo {
-            background: url(Images/image\ \(1\).png) no-repeat center;
-            width: 348px;
-            height: 370px;
+        body {
+            background: url(Images/ArenaSNV.jpg) no-repeat;
+            background-size: cover;
+            margin: 10px;
         }
-        main h1 span.small,
-        main h1 span.large {
-            display: none;
+        main.logo {
+            background: url(Images/debb4u1-9be808f3-abe5-4679-b3a2-96d191734191.png) no-repeat;
+            height: 50px;
+            width: 650px;
+            margin-top: -100px;
         }
-        main h1 span.medium {
-            display: none;
+        main nav.guerreros {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            margin: 0 auto;
         }
-        main h1 {
-            font-size: 2.8rem;
+        nav div.imagen1,
+        nav div.imagen2,
+        nav div.imagen3,
+        nav div.imagen4 {
+            height: 210px;
+            width: 200px;
+        }
+        nav div.img1,
+        nav div.img2 {
+            margin: 20px 20px 20px 80px auto;
+            width: 200px;
+        }
+        nav div.sec1 {
+            display: flex;
+        }
+        nav p {
+            box-sizing: border-box;
+            height: 145px;
+            overflow-y: scroll;
+            text-align: justify;
+            width: 250px;
+        }
+        h1 {
+            text-align: justify;
+            text-align: center;
         }
     }
     
     @media (max-width: 780px) {
-        main header figure.Logo {
-            background: url(Images/image\ \(2\).png) no-repeat center;
-            width: 162px;
-            height: 156px;
+        body {
+            background: url(Images/ArenaSNV.jpg);
+            background-size: cover;
         }
-        main h1 span.medium,
-        main h1 span.large {
-            display: none;
+        main.logo {
+            background: url(Images/debb4u1-9be808f3-abe5-4679-b3a2-96d191734191.png) no-repeat center;
+            height: 200px;
+            margin-top: 10px;
+            width: 200px;
         }
-        main h1 span.small {
-            display: inline;
+        main nav.guerreros {
+            display: grid;
+            justify-items: center;
+            grid-template-columns: 1fr;
         }
-        main h1 {
-            font-size: 2rem;
+        nav div.sec1 {
+            display: grid;
         }
-    }
-    
-    h1.img {
-        width: 230px;
-        height: 200px;
-        gap: 2rem;
-    }
-    
-    section {
-        display: flex;
-        gap: 2rem;
-    }
-    
-    section div {
-        background-color: #333;
-        width: 230px;
-        position: relative;
-        height: 200px;
-    }
-    
-    section div p {
-        background-color: darkgray;
-        position: absolute;
-        text-align: center;
-        color: #fffe;
-        height: 40px;
-        bottom: -15px;
-        width: 230px;
+        nav.luchadores {
+            justify-content: center;
+        }
+        nav div.img1,
+        nav div.img2 {
+            margin: 0 auto;
+        }
+        nav p {
+            box-sizing: border-box;
+            height: 200px;
+            justify-content: center;
+            overflow-y: scroll;
+            text-align: justify;
+            width: 200px;
+        }
+        h1 {
+            text-align: justify;
+            text-align: center;
+        }
     }
 </style>
+</head>
 
 <body>
     <main>
+        <main class="logo"></main>
+        <nav class="guerreros">
+            <div class="imagen1">
+                <img src="Images/Hades-removebg-preview.png" height="180px" width="200px">
+                <div class="name">
+                    <p>(Hades season1)</p>
+                </div>
+            </div>
+            <div class="imagen2">
+                <img src="Images/Qin-shin-removebg-preview.png" height="180px" width="200px">
+                <div class="name">
+                    <p>(Qin-Shin-Huang season1)</p>
+                </div>
+            </div>
+            <div class="imagen3">
+                <img src="Images/Bhuda-removebg-preview.png" height="180px" width="200px">
+                <div class="name">
+                    <p>(Budha season1)</p>
+                </div>
+            </div>
+            <div class="imagen4">
+                <img src="Images/Heracles-removebg-preview.png" height="180px" width="200px">
+                <div class="name">
+                    <p>(Heracles season1)</p>
+                </div>
+            </div>
+            <div>
+                <nav class="luchadores">
+                    <div class="sec1">
+                        <div class="img1">
+                            <img src="Images/Poseidon-removebg-preview.png" height="200px" width="200px">
+                            <div class="villian"></div>
+                        </div>
+                        <div class="text">
+                            <h1>Adam</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eligendi repudiandae nam obcaecati consequatur nulla! Unde, maxime ullam id quod ducimus necessitatibus aspernatur tenetur blanditiis recusandae consectetur laborum
+                                aut fuga, tempore debitis ipsum eos qui culpa amet dignissimos, repellat quo? Nemo eum, consequuntur molestias reprehenderit ipsam aliquid voluptates consectetur natus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sec1">
+                        <div class="img2">
+                            <img src="Images/Zeus-removebg-preview.png" height="200px" width="200px">
+                            <div class="villian"></div>
+                        </div>
+                        <div class="text">
+                            <h1>Zeus</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem eius minima ipsa adipisci aliquid ad deleniti aliquam earum! Magni praesentium a cupiditate iste, officiis assumenda autem eum consequatur placeat
+                                iusto, debitis eligendi voluptas accusamus! Consequuntur, vitae at. Quod ipsam fugiat autem dignissimos ducimus magnam eveniet maxime molestias ut enim.
+                            </p>
+                        </div>
+                    </div>
 
-        <header>
-            <figure class="Logo"></figure>
-        </header>
-        <section>
-            <div>
-                <img src="Images/Bruhilld t.jpeg" alt="">
-                <p>(SNV season1)</p>
+                </nav>
             </div>
-            <div>
-                <img src="Images/Bruhilldjpeg.jpeg" alt="">
-                <p>(SNV season1)</p>
-            </div>
-            <div>
-                <img src="Images/Bruhilld t.jpeg" alt="">
-                <p>(SNV season1)</p>
-            </div>
-            <div>
-                <img src="Images/Bruhilldjpeg.jpeg" alt="">
-                <p>(SNV season1)</p>
-            </div>
-        </section>
+        </nav>
     </main>
 </body>
 
