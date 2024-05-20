@@ -64,7 +64,7 @@ main {
             background-color: #0009;
             border-radius: 50px;
             display: flex;
-            color: #fff9;
+            color: #fff;
             gap: 1rem;
             align-items: center;
             padding: 1rem;
@@ -72,9 +72,9 @@ main {
             transition: all 0.5s ease-in;
             width: 280px;
             i {
-                background-color: #9d1670;
+                background-color: #008ffc;
                 border-radius: 20px;
-                color: #3424ab;
+                color: #0000ff;
                 font-style: normal;
                 display: flex;
                 transition: all 0.6s ease-in;
@@ -86,7 +86,7 @@ main {
         }
         a:is(:hover) {
             transform: translate(-30px);
-            background-color: rgb(245, 102, 6);
+            background-color: rgb(181, 181, 182);
         }
         a:is(:hover) i {
             transform: scale(1.4) rotateX(360deg);
