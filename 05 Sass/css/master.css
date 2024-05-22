@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 body {
-    background-color: #B47A1E;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23a25f1a' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%238f4717' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%237d3213' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%236a2110' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%2357130D' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #EC35D3;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23ce2cbc' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23b123a5' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%2393198e' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23761077' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23580760' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: cover;
 }
 
 nav.controls {
     position: fixed;
-    a:is(link,
-    visited) {
+    a:is(:link,
+    : visited) {
         border-radius: 50px;
         display: flex;
         align-items: center;
@@ -39,9 +39,6 @@ main {
     gap: 2rem;
     min-height: 100vh;
     header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         h1,
         h2 {
             color: #fff8;
@@ -56,11 +53,6 @@ main {
             font-size: 1.4rem;
             font-weight: 300;
         }
-        img {
-            border-radius: 50%;
-            width: 160px;
-            border: 10 solid #000;
-        }
     }
     menu {
         display: flex;
@@ -72,7 +64,7 @@ main {
             background-color: #0009;
             border-radius: 50px;
             display: flex;
-            color: #fff;
+            color: #fff9;
             gap: 1rem;
             align-items: center;
             padding: 1rem;
@@ -80,9 +72,9 @@ main {
             transition: all 0.5s ease-in;
             width: 280px;
             i {
-                background-color: #f18e0d;
+                background-color: #9d1670;
                 border-radius: 20px;
-                color: #6b3f03;
+                color: #3424ab;
                 font-style: normal;
                 display: flex;
                 transition: all 0.6s ease-in;
@@ -94,7 +86,7 @@ main {
         }
         a:is(:hover) {
             transform: translate(-30px);
-            background-color: rgb(235, 106, 0);
+            background-color: rgb(245, 102, 6);
         }
         a:is(:hover) i {
             transform: scale(1.4) rotateX(360deg);
