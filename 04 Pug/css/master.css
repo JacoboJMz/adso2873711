@@ -8,7 +8,7 @@ body {
 
 nav.controls {
     position: fixed;
-    a:is(link,
+    a:is(:link,
     visited) {
         border-radius: 50px;
         display: flex;
@@ -68,7 +68,7 @@ main {
         padding: 0;
         gap: 1rem;
         a:is(:link,
-        : visited) {
+        visited) {
             background-color: #0009;
             border-radius: 50px;
             display: flex;
@@ -111,7 +111,6 @@ main {
             color: #0009;
             font-size: 1.6rem;
             margin: 0;
-            width: fit-content;
         }
         p {
             font-size: 1.4rem;
