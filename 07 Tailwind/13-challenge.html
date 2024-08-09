@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Para asegurar que el contenido esté centrado verticalmente */
+        .screen-container {
+            height: 70vh;
+        }
+        body{
+            background-image: url(images/fondo\ f1.png);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+
+    <!-- Primera pantalla -->
+    <div id="screen1" class="screen-container w-80 p-6 bg-red-700 text-white rounded-lg shadow-lg flex flex-col justify-between">
+        <img src="images/Monoplaza.jpeg" alt="Red Bull F1 Car" class="w-full mb-4">
+        <div>
+            <h1 class="text-2xl font-bold mb-2">Formula 1</h1>
+            <p class="text-sm mb-4">Formula 1 is the pinnacle of speed and technology in motorsport.</p>
+        </div>
+        <button onclick="nextScreen('screen2')" class="bg-blue-600 text-white px-4 py-2 rounded-lg mt-4">Get started</button>
+    </div>
+
+    <!-- Segunda pantalla -->
+    <div id="screen2" class="screen-container w-80 p-6 bg-yellow-400 text-black rounded-lg shadow-lg flex flex-col justify-between hidden">
+        <button onclick="prevScreen('screen1')" class="text-black mb-4"><- Back</button>
+        <div>
+            <h2 class="text-2xl font-bold mb-4">Escuderías</h2>
+            <img src="images/Escuderia.jpg" alt="Team Line-ups 2024" class="w-full mb-4">
+            <ul>
+                <li class="mb-2">
+                    <img src="images/F1-1.jpeg" alt="Carlos Sainz Jr." class="inline w-10 h-10 rounded-full mr-2">
+                    Carlos Sainz Jr.
+                </li>
+                <li class="mb-2">
+                    <img src="images/F1.jpeg" alt="Lewis Hamilton" class="inline w-10 h-10 rounded-full mr-2">
+                    Lewis Hamilton
+                </li>
+                <li class="mb-2">
+                    <img src="images/Verstapen.jpeg" alt="Max Verstappen" class="inline w-10 h-10 rounded-full mr-2">
+                    Max Verstappen
+                </li>
+            </ul>
+        </div>
+        <button onclick="nextScreen('screen3')" class="bg-blue-600 text-white px-4 py-2 rounded-lg mt-4">Next</button>
+    </div>
+
+    <!-- Tercera pantalla -->
+    <div id="screen3" class="screen-container w-80 p-6 bg-blue-500 text-white rounded-lg shadow-lg flex flex-col justify-between hidden">
+        <button onclick="prevScreen('screen2')" class="text-white mb-4"><- Back</button>
+        <div>
+            <h2 class="text-xl font-bold mb-4">Las 7 pistas más peligrosas en la historia de la Fórmula 1</h2>
+            <ol class="list-decimal ml-6 mb-4">
+                <li>Pescara</li>
+                <li>Nürburgring Nordschleife</li>
+                <li>Spa Francorchamps</li>
+                <li>Monza</li>
+                <li>Monaco</li>
+                <li>Zolder</li>
+                <li>Indianapolis Motorspeedway</li>
+            </ol>
+            <p class="text-sm">¿Cuáles son las pistas más peligrosas y desafiantes en la historia de la Fórmula 1?</p>
+        </div>
+        <button onclick="nextScreen('screen1')" class="bg-blue-600 text-white px-4 py-2 rounded-lg mt-4">Continue</button>
+    </div>
+
+    <script>
+        function nextScreen(screenId) {
+            document.querySelectorAll('div[id^="screen"]').forEach(screen => {
+                screen.classList.add('hidden');
+            });
+            document.getElementById(screenId).classList.remove('hidden');
+        }
+
+        function prevScreen(screenId) {
+            document.querySelectorAll('div[id^="screen"]').forEach(screen => {
+                screen.classList.add('hidden');
+            });
+            document.getElementById(screenId).classList.remove('hidden');
+        }
+    </script>
+
+</body>
+</html>
