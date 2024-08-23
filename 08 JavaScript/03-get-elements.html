@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+    <title>03 - Get-Elements</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        button.btn{
+            background-color: #fff9;
+        }
+    </style>
+</head>
+<body>
+    <nav class="controls">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#ffffff"
+                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+            </svg>
+        </a>
+    </nav>
+    <main>
+        <header>
+            <h1>Get-Elements</h1>
+            <h2>Selecting & modifying elements of the DOM</h2>
+        </header>
+        <section>
+            <h3>Current Year: <small id="year"></small></h3>
+            <ul>
+                <li>Bulbasur</li>
+                <li>Squirtle</li>
+                <li>Charmander</li>
+            </ul>
+            <h3 id="numList"></h3>
+            <h3 id="LastLi"></h3>
+            <!--  -->
+            <p class="text">Lorem Ipsum Dolor</p>
+            <p class="text">Lorem Ipsum Dolor</p>
+            <h3 id="numP"></h3>
+            <!--  -->
+            <button class="btn first">Button 1</button>
+            <button class="btn">Button 2</button>
+            <button class="btn">Button 3</button>
+        </section>
+    </main>
+    <script>
+        const year = document.getElementById("year")
+        var ndate = new Date
+        year.textContent = ndate.getFullYear()
+        //Get Element By Id
+        const Lis = document.getElementsByTagName('li')
+        numList.innerText = "Number Elements: " + Lis.length 
+        LastLi.innerText = 'Last Pokemon:  ' + Lis[Lis.length-1].textContent
+        //Get Element By Class Name
+        const ps = document.getElementsByClassName('text')
+        numP.innerHTML = 'There are: <small>' + ps.length + ' paragraphs </small>'
+        ps[0].style.backgroundColor = '#089'
+        ps[1].style.backgroundColor = '#05f'
+        //Query Selector(s)
+        const first = document.querySelector('.first')
+        const btns = document.querySelectorAll('button.btn')
+        first.style.color = '#f00'
+        btns[2].style.color = '#0a0'
+    </script>
+</body>
+</html>
